@@ -1,0 +1,239 @@
+.cart
+    margin: 96px auto 128px
+    display: flex
+    justify-content: space-between
+    &__product
+        display: flex
+        flex-direction: column
+        &_img
+            width: 262px
+        &_i
+            width: 652px
+            display: flex
+            border: 1px solid #EAEAEA
+            box-shadow: 17px 19px 24px 0px #00000021
+        &_1
+            margin-bottom: 40px
+        &_2
+            margin-bottom: 72px
+        &_text
+            display: flex
+            justify-content: space-between
+            width: 100%
+            padding: 22px 22px 62px 31px
+            & h2
+                margin-bottom: 42px
+                font-size: 24px
+                font-weight: 400
+                line-height: 28px
+                color: #302020
+            & h4
+                color: #575757
+                margin-bottom: 6px
+                font-size: 22px
+                font-weight: 400
+                line-height: 26px
+        &_close button
+            border: none
+            background-color: #fff
+            cursor: pointer
+            &:hover path
+                transition: .3s
+                fill: $textColorRed2
+        &_btn
+            font-family: 'lato'
+            max-width: 652px
+            display: flex
+            justify-content: space-between
+            text-transform: uppercase
+            & button
+                font-family: 'lato'
+                cursor: pointer
+                background-color: #fff
+                padding: 17px 40px
+                border: 1px solid #A4A4A4
+                font-size: 14px
+                font-weight: 400
+                line-height: 16px
+                &:hover
+                    background-color: $textColorRed
+                    color: white
+                    transition: .3s
+    &__span
+        color: #6F6E6E
+        &_red
+            color: $textColorRed2
+    &__shipping
+        margin-top: 17px
+        max-width: 360px
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 67px
+        &_adress
+            & h3
+                margin-bottom: 20px
+                font-size: 16px
+                font-weight: 400
+                line-height: 19px
+                color: #222222
+        &_form
+            display: flex
+            flex-direction: column
+            gap: 20px
+            & input
+                // width: 360px
+                height: 45px
+                font-size: 13px
+                color: #222222
+                line-height: 15px
+                font-weight: 400
+                border: 1px solid #A4A4A4
+                padding-left: 18px
+                font-family: "Lato"
+                &:last-child
+                    width: 100px
+                    height: 35px
+                    padding-left: 0
+                    background-color: #fff
+                    margin-top: 3px
+                    font-size: 11px
+                    line-height: 13px
+                    color: #4A4A4A
+                    cursor: pointer
+                    &:hover
+                        transition: .3s
+                        background-color: $textColorRed2
+                        color: #fff
+        &_total
+            background-color: #F5F3F3
+            padding: 39px 34px 42px 44px
+            & h6
+                font-size: 11px
+                font-weight: 400
+                line-height: 13px
+                color: #4A4A4A
+            & h4
+                font-size: 16px
+                font-weight: 400
+                line-height: 19px
+                color: #222222
+                &:last-child
+                    font-weight: 700
+                    color: #F16D7F
+            &-h6
+                margin-bottom: 12px
+            &-h4
+                margin-bottom: 21px
+            &-h
+                display: flex
+                gap: 20px
+                justify-content: flex-end
+            & hr
+                border: none
+                color: #E2E2E2
+                background-color: #E2E2E2
+                height: 1px
+                margin-bottom: 17px
+            &-btn
+                width: 100%
+                padding: 15px 0
+                background-color: #F16D7F
+                border: none
+                cursor: pointer
+                color: #fff
+                font-size: 16px
+                font-weight: 400
+                line-height: 19px
+                &:hover
+                    transition: .3s
+                    border: 1px solid #A4A4A4
+                    background-color: #F5F3F3
+                    color: #000000
+
+.get
+    text-transform: uppercase
+
+.quantity
+    display: flex
+    gap: 24px
+    & h4:last-child
+        padding: 1px 16px
+        border: 1px solid #EAEAEA
+
+@media (max-width: 1139px) and (min-width: 768px)
+    .cart
+        margin-top: 59px
+        flex-wrap: wrap
+        &__product_2
+            margin-bottom: 62px
+        &__product_i
+            width: 734px
+        &__product_text
+            max-width: 100%
+        &__product_btn
+            margin: 0 auto
+            gap: 48px
+        &__shipping
+            flex-direction: row
+            justify-content: space-between
+            max-width: 100%
+            gap: 15px
+            &_adress
+                width: 100%
+                max-width: 360px
+            &_total
+                margin-top: 39px
+                width: 100%
+                max-width: 360px
+                max-height: 214px
+
+@media (max-width: 767px)
+    .nav__cart
+        padding: 50px 0 69px
+    .cart
+        margin-top: 39px
+        flex-wrap: wrap
+        margin-bottom: 96px
+        &__product
+            margin-bottom: 48px
+            &_i
+                width: 358px
+            &_1
+                margin-bottom: 32px
+            &_2
+                margin-bottom: 30px
+            &_img
+                width: 143px
+                height: 188px
+            &_text
+                padding: 13.5px 12px 0px 17px
+            &_inf h2
+                font-size: 16px
+                line-height: 19.2px
+                margin-bottom: 25px
+            &_inf h4
+                font-size: 14px
+                margin-bottom: -4px
+            &_btn button
+                font-size: 12px
+                padding: 9px 0
+                max-width: 175px
+                width: 100%
+            &_close
+                width: 10px
+                height: 10px
+                & svg
+                    width: 100%
+                    height: auto
+        &__shipping
+            gap: 48px
+            &_total
+                padding: 39px 34px 42px 44px
+    .quantity
+        gap: 15px
+        & h4:last-child
+            font-size: 10px
+            padding: 0 9px
+    .get
+        text-transform: lowercase

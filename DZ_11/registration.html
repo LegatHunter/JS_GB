@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Магазин одежды</title>
+        <title>Регистрация</title>
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +13,6 @@
             rel="stylesheet" />
         <script src="./script.js" defer></script>
     </head>
-
     <body>
         <header>
             <section class="header container">
@@ -41,148 +40,186 @@
                 </div>
             </section>
         </header>
-        <main>
-            <div class="menu__burger hidden__menu">
-                <div class="menu__x">
-                    <button class="x">
-                        <img src="./img/x.svg" alt="Закрыть" />
-                    </button>
-                    <h5>MENU</h5>
-                    <div class="man">
-                        <p>MAN</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Bags</li>
-                            <li>Denim</li>
-                            <li>T-Shirts</li>
-                        </ul>
-                    </div>
-                    <div class="woman">
-                        <p>WOMAN</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Jackets &amp;&nbsp;Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
-                        </ul>
-                    </div>
-                    <div class="kids">
-                        <p>KIDS</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Jackets &amp;&nbsp;Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
-                            <li>Bags</li>
-                        </ul>
-                    </div>
+        <div class="menu__burger hidden__menu">
+            <div class="menu__x">
+                <button class="x">
+                    <img src="./img/x.svg" alt="Закрыть" />
+                </button>
+                <h5>MENU</h5>
+                <div class="man">
+                    <p>MAN</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>T-Shirts</li>
+                    </ul>
+                </div>
+                <div class="woman">
+                    <p>WOMAN</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets &amp;&nbsp;Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                    </ul>
+                </div>
+                <div class="kids">
+                    <p>KIDS</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets &amp;&nbsp;Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                        <li>Bags</li>
+                    </ul>
                 </div>
             </div>
-            <section class="pre">
-                <div class="preview">
-                    <img
-                        class="hidden"
-                        src="./img/Preview_mag.png"
-                        alt="preview" />
-                    <div class="preview__div">
-                        <div class="preview__text">
-                            <h1>
-                                <span class="brand">THE BRAND<br /></span
-                                >OF&nbsp;LUXERIOUS
-                                <span class="fashion">FASHION</span>
-                            </h1>
+        </div>
+        <nav>
+            <div class="nav nav__cart container">
+                <h1>REGISTRATION</h1>
+            </div>
+        </nav>
+        <main>
+            <section class="container registration">
+                <div class="reg">
+                    <form action="URL" method="get" class="reg__form">
+                        <h6>Your Name</h6>
+                        <input
+                            class="reg__form_input reg__form_input-fn"
+                            type="text"
+                            placeholder="First Name" />
+                        <input
+                            class="reg__form_input reg__form_input-ln"
+                            type="text"
+                            placeholder="Last Name" />
+                        <div class="reg__form_input-radio">
+                            <input
+                                type="radio"
+                                name="reg__radio"
+                                id="male"
+                                checked />
+                            <label for="male">Male</label>
+                            <input type="radio" name="reg__radio" id="female" />
+                            <label for="female">Female</label>
+                            <input
+                                type="radio"
+                                name="reg__radio"
+                                id="other"
+                                class="registration__hidden" />
+                            <label for="other" class="registration__hidden"
+                                >Other</label
+                            >
                         </div>
-                    </div>
+                        <h6>Login details</h6>
+                        <input
+                            class="reg__form_input"
+                            type="email"
+                            placeholder="Email" />
+                        <input
+                            class="reg__form_input reg__form_input-p"
+                            type="password"
+                            placeholder="Password" />
+                        <p>
+                            Please use 8 or more characters, with at least 1
+                            number and a mixture of uppercase and lowercase
+                            letters
+                        </p>
+                        <button type="submit" class="reg__form_btn">
+                            JOIN NOW
+                            <svg
+                                width="17"
+                                height="10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.54.208a.709.709 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003Z"
+                                    fill="#fff" />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 4.96a.708.708 0 0 1 .708-.709h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.959Z"
+                                    fill="#fff" />
+                            </svg>
+                        </button>
+                    </form>
                 </div>
-            </section>
-            <section class="grid container">
-                <div class="item1 item__size">
-                    <a href="./product.html"
-                        ><div class="bop">
-                            <div class="item1__text">
-                                <p>30% OFF</p>
-                                <h4>FOR WOMEN</h4>
-                            </div>
-                        </div></a
-                    >
-                </div>
-                <div class="item2 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item2__text">
-                                <p>HOT DEAL</p>
-                                <h4>FOR MEN</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item3 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item3__text">
-                                <p>NEW ARRIVALS</p>
-                                <h4>FOR KIDS</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item4__long">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item4__long__text">
-                                <p>LUXIROUS &amp;&nbsp;TRENDY</p>
-                                <h4>ACCESORIES</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="product container">
-                <div class="product__intro">
-                    <h4>Fetured Items</h4>
+                <div class="reg-inf">
+                    <h4>LOYALTY HAS ITS PERKS</h4>
                     <p>
-                        Shop for items based on&nbsp;what we&nbsp;featured
-                        in&nbsp;this week
+                        Get in on the loyalty program where you can earn points
+                        and unlock serious perks. Starting with these as soon as
+                        you join:
                     </p>
-                </div>
-                <div class="grid__product">
-                </div>
-                <div class="all__product container">
-                    <a class="btn__all__product" href="./catalog.html">
-                        Browse All Product
-                    </a>
-                </div>
-            </section>
-            <section class="predlog">
-                <div class="predlog__cont container">
-                    <div class="delivery predlog__pad">
-                        <img src="./img/Delivery.svg" alt="Доставка" />
-                        <h5>Free Delivery</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
-                    </div>
-                    <div class="sales predlog__pad">
-                        <img src="./img/Sales.svg" alt="Скидки" />
-                        <h5>Sales &amp;&nbsp;discounts</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
-                    </div>
-                    <div class="quality predlog__pad">
-                        <img src="./img/Quality.svg" alt="Корона" />
-                        <h5>Quality assurance</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
+                    <div class="reg-inf__check">
+                        <div class="reg-inf__check_1 reg-inf__check_i">
+                            <svg
+                                width="20"
+                                height="16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <p>15% off welcome offer</p>
+                        </div>
+                        <div class="reg-inf__check_2 reg-inf__check_i">
+                            <svg
+                                width="20"
+                                height="16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <p>
+                                Free shipping, returns and exchanges on all
+                                orders
+                            </p>
+                        </div>
+                        <div class="reg-inf__check_3 reg-inf__check_i">
+                            <svg
+                                width="20"
+                                height="16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <p>$10 off a purchase on your birthday</p>
+                        </div>
+                        <div class="reg-inf__check_4 reg-inf__check_i">
+                            <svg
+                                width="20"
+                                height="16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <p>Early access to products</p>
+                        </div>
+                        <div class="reg-inf__check_5 reg-inf__check_i">
+                            <svg
+                                width="20"
+                                height="16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <p>Exclusive offers &amp; rewards</p>
+                        </div>
                     </div>
                 </div>
             </section>

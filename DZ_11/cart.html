@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Магазин одежды</title>
+        <title>Корзина</title>
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +13,6 @@
             rel="stylesheet" />
         <script src="./script.js" defer></script>
     </head>
-
     <body>
         <header>
             <section class="header container">
@@ -41,148 +40,168 @@
                 </div>
             </section>
         </header>
-        <main>
-            <div class="menu__burger hidden__menu">
-                <div class="menu__x">
-                    <button class="x">
-                        <img src="./img/x.svg" alt="Закрыть" />
-                    </button>
-                    <h5>MENU</h5>
-                    <div class="man">
-                        <p>MAN</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Bags</li>
-                            <li>Denim</li>
-                            <li>T-Shirts</li>
-                        </ul>
-                    </div>
-                    <div class="woman">
-                        <p>WOMAN</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Jackets &amp;&nbsp;Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
-                        </ul>
-                    </div>
-                    <div class="kids">
-                        <p>KIDS</p>
-                        <ul>
-                            <li>Accessories</li>
-                            <li>Jackets &amp;&nbsp;Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
-                            <li>Bags</li>
-                        </ul>
-                    </div>
+        <div class="menu__burger hidden__menu">
+            <div class="menu__x">
+                <button class="x">
+                    <img src="./img/x.svg" alt="Закрыть" />
+                </button>
+                <h5>MENU</h5>
+                <div class="man">
+                    <p>MAN</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>T-Shirts</li>
+                    </ul>
+                </div>
+                <div class="woman">
+                    <p>WOMAN</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets &amp;&nbsp;Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                    </ul>
+                </div>
+                <div class="kids">
+                    <p>KIDS</p>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets &amp;&nbsp;Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                        <li>Bags</li>
+                    </ul>
                 </div>
             </div>
-            <section class="pre">
-                <div class="preview">
-                    <img
-                        class="hidden"
-                        src="./img/Preview_mag.png"
-                        alt="preview" />
-                    <div class="preview__div">
-                        <div class="preview__text">
-                            <h1>
-                                <span class="brand">THE BRAND<br /></span
-                                >OF&nbsp;LUXERIOUS
-                                <span class="fashion">FASHION</span>
-                            </h1>
+        </div>
+        <nav>
+            <div class="nav nav__cart container">
+                <h1>SHOPPING CART</h1>
+            </div>
+        </nav>
+        <main>
+            <section class="cart container">
+                <div class="cart__product">
+                    <div class="cart__product_1 cart__product_i">
+                        <img
+                            class="cart__product_img"
+                            src="./img/P_3.jpg"
+                            alt="Продукт 3" />
+                        <div class="cart__product_text">
+                            <div class="cart__product_inf">
+                                <h2>MANGO PEOPLE<br />T-SHIRT</h2>
+                                <h4>
+                                    Price:
+                                    <span class="cart__span_red">$300</span>
+                                </h4>
+                                <h4>
+                                    Color: <span class="cart__span">Red</span>
+                                </h4>
+                                <h4>
+                                    Size: <span class="cart__span">Xl</span>
+                                </h4>
+                                <div class="quantity">
+                                    <h4>Quantity:</h4>
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="cart__product_close">
+                                <button>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 18 18">
+                                        <path
+                                            fill="#575757"
+                                            d="m11.245 9 6.285-6.285a1.59 1.59 0 0 0-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 0 0-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 0 0 2.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 0 0 2.25-2.25L11.244 9Z" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="grid container">
-                <div class="item1 item__size">
-                    <a href="./product.html"
-                        ><div class="bop">
-                            <div class="item1__text">
-                                <p>30% OFF</p>
-                                <h4>FOR WOMEN</h4>
+                    <div class="cart__product_2 cart__product_i">
+                        <img
+                            class="cart__product_img"
+                            src="./img/P_7.jpg"
+                            alt="Продукт 7" />
+                        <div class="cart__product_text">
+                            <div class="cart__product_inf">
+                                <h2>MANGO PEOPLE<br />T-SHIRT</h2>
+                                <h4>
+                                    Price:
+                                    <span class="cart__span_red">$300</span>
+                                </h4>
+                                <h4>
+                                    Color: <span class="cart__span">Red</span>
+                                </h4>
+                                <h4>
+                                    Size: <span class="cart__span">Xl</span>
+                                </h4>
+                                <div class="quantity">
+                                    <h4>Quantity:</h4>
+                                    <h4 class="cart__span">2</h4>
+                                </div>
                             </div>
-                        </div></a
-                    >
-                </div>
-                <div class="item2 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item2__text">
-                                <p>HOT DEAL</p>
-                                <h4>FOR MEN</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item3 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item3__text">
-                                <p>NEW ARRIVALS</p>
-                                <h4>FOR KIDS</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item4__long">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item4__long__text">
-                                <p>LUXIROUS &amp;&nbsp;TRENDY</p>
-                                <h4>ACCESORIES</h4>
+                            <div class="cart__product_close">
+                                <button>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 18 18">
+                                        <path
+                                            fill="#575757"
+                                            d="m11.245 9 6.285-6.285a1.59 1.59 0 0 0-2.245-2.25L9 6.752 2.715.466a1.59 1.59 0 0 0-2.25 2.25L6.752 9 .466 15.285a1.59 1.59 0 0 0 2.25 2.25L9 11.248l6.285 6.285a1.591 1.591 0 0 0 2.25-2.25L11.244 9Z" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                    </a>
-                </div>
-            </section>
-            <section class="product container">
-                <div class="product__intro">
-                    <h4>Fetured Items</h4>
-                    <p>
-                        Shop for items based on&nbsp;what we&nbsp;featured
-                        in&nbsp;this week
-                    </p>
-                </div>
-                <div class="grid__product">
-                </div>
-                <div class="all__product container">
-                    <a class="btn__all__product" href="./catalog.html">
-                        Browse All Product
-                    </a>
-                </div>
-            </section>
-            <section class="predlog">
-                <div class="predlog__cont container">
-                    <div class="delivery predlog__pad">
-                        <img src="./img/Delivery.svg" alt="Доставка" />
-                        <h5>Free Delivery</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
                     </div>
-                    <div class="sales predlog__pad">
-                        <img src="./img/Sales.svg" alt="Скидки" />
-                        <h5>Sales &amp;&nbsp;discounts</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
+                    <div class="cart__product_btn">
+                        <button>Clear shopping cart</button>
+                        <button>Continue shopping</button>
                     </div>
-                    <div class="quality predlog__pad">
-                        <img src="./img/Quality.svg" alt="Корона" />
-                        <h5>Quality assurance</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
+                </div>
+                <div class="cart__shipping">
+                    <div class="cart__shipping_adress">
+                        <h3>SHIPPING ADRESS</h3>
+                        <form
+                            action="URL"
+                            method="get"
+                            class="cart__shipping_form">
+                            <input
+                                type="text"
+                                placeholder="Bangladesh"
+                                required />
+                            <input type="text" value="State" required />
+                            <input
+                                type="text"
+                                value="Postcode / Zip"
+                                required />
+                            <input
+                                class="get"
+                                type="submit"
+                                value="Get a quote" />
+                        </form>
+                    </div>
+                    <div class="cart__shipping_total">
+                        <div
+                            class="cart__shipping_total-h cart__shipping_total-h6">
+                            <h6>SUB TOTAL</h6>
+                            <h6>$900</h6>
+                        </div>
+                        <div
+                            class="cart__shipping_total-h cart__shipping_total-h4">
+                            <h4>GRAND TOTAL</h4>
+                            <h4>$900</h4>
+                        </div>
+                        <hr />
+                        <button class="cart__shipping_total-btn">
+                            PROCEED TO CHECKOUT
+                        </button>
                     </div>
                 </div>
             </section>
