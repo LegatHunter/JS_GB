@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div {
+  max-width: 250px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+div h2 {
+  color: blueviolet;
+}
+
+div h4 {
+  font-style: italic;
+  font-size: 18px;
+  color:gold
+}
+
+div p {
+  background-color: grey;
+}
