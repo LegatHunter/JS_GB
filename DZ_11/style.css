@@ -293,6 +293,11 @@ header {
   cursor: pointer;
   text-decoration: none;
 }
+.card__hover button:active {
+  transition: 0.1s;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+}
 
 .cards {
   position: relative;
@@ -1311,6 +1316,7 @@ nav {
   line-height: 26px;
 }
 .cart__product_close button {
+  width: 18px;
   border: none;
   background-color: #fff;
   cursor: pointer;
